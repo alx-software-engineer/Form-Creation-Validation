@@ -1,9 +1,9 @@
 async function fetchUserData() {
     const dataContainer = document.getElementById("api-data");
-    const response = "https://jsonplaceholder.typicode.com/users";
+    const apiUrl = "https://jsonplaceholder.typicode.com/users";
     try {
-        const resolved = await fetch(response); 
-        const users = await resolved.json();
+        const response = await fetch(apiUrl); 
+        const users = await response.json();
         dataContainer.innerHTML = '';
         const userList = document.createElement("ul");
         users.forEach(element => {
