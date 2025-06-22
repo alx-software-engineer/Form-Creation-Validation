@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
             feedbackDiv.style.color = "#28a745";
         } else {
             const joinedMesaage = messages.join('<br>');
+            feedbackDiv.style.color = "#dc3545"
             feedbackDiv.innerHTML = joinedMesaage;
         }
 
